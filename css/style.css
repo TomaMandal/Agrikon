@@ -1,0 +1,581 @@
+
+ :root{
+    --bs-warning: #f7c35f;
+    --bs-warning-rgb: 247, 195, 95;
+    --bs-yellow: #f7c35f;
+    --bs-green: #255946;
+    --bs-success: #255946;
+    --bs-green-light: #49a760;
+    --bs-secondary: #9ea5a2;
+    --bs-gray-600: #9ea5a2;
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Handlee", cursive;
+    --bs-light: #f6f5f2;
+    --bs-light-rgb: 246, 245, 242;
+}
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #255946;
+    --bs-btn-border-color: #255946;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #255946;
+    --bs-btn-hover-border-color: #255946;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #255946;
+    --bs-btn-active-border-color: #255946;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #255946;
+    --bs-btn-disabled-border-color: #255946;
+}
+body{
+    font-size: 16px;
+    color: var(--bs-secondary);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 1.5;
+    /* background-color: var(--bs-green); */
+}
+
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+p{
+    margin-bottom: 0;
+}
+.social-icon ul li a, .social-icon p, .site-detail ul li a, .site-detail ul li p{
+    font-size: 12px;
+    color: var(--bs-dark);
+    text-decoration: none;
+}
+.social-icon .bi::before{
+    vertical-align: 0px;
+}
+.social-icon ul li a i, .social-icon p i, .site-detail ul li a i, .site-detail ul li p i {
+    color: var(--bs-green-light);
+}
+
+/* main-menu */
+.navbar-brand img{
+    display: block;
+    max-width: 150px;
+}
+.navbar::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 16px;
+    top: 100%;
+    background-image: url('../img/ripped-paper-header-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99; 
+}
+.navbar::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 16px;
+    bottom: 100%;
+    background-image: url('../img/ripped-paper-primary-up.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99; 
+    transform: rotate(180deg);
+}
+.navbar-expand-lg .navbar-nav .nav-item  .nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-item {
+        margin-left: 55PX;
+    }
+}
+
+
+.dropdown-menu{
+    padding: 0;
+    overflow: hidden;
+    width: 220px;
+    border: none;
+}
+.dropdown-item{
+    padding: 10px 20px;
+    line-height: 30px;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color: var(--bs-warning);
+    color: var(--bs-light);
+}
+
+.call-details{
+    text-align: left;
+    margin-left: 10px;
+}
+.call-details span:first-child{
+    font-size: 12px;
+}
+
+.contact-details .list-inline-item .btn, .about-content .btn .jarallax .btn, .contact-form .btn{
+    padding: 18px 17px;
+    background-color: var(--bs-warning);
+    border: none;
+    color: var(--bs-light);
+}
+.contact-details .list-inline-item .btn-check:focus+.btn, .contact-details .list-inline-item .btn:focus{
+    box-shadow: none;
+}
+.contact-details .list-inline-item .btn:hover{
+    background-color: var(--bs-green);
+}
+
+.contact-details .list-inline-item a{
+    color: var(--bs-success);
+}
+.contact-details .list-inline-item{
+    padding: 0px 10px;
+}
+
+/* search-offcanvas */
+#search.offcanvas{
+    height: 100vh;
+    background-color: transparent;
+    z-index: 1045;
+}
+#search.offcanvas::before{
+    position: absolute;
+    content: '';
+    z-index: -1045;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-success);
+    opacity: 0.75;
+}
+#search.offcanvas .btn-primary{
+    background-color: var(--bs-green-light);
+}
+
+/* slider */
+/* #main-slider .carousel-caption{
+    right: 40%;
+    bottom: 50%;
+    transform: translateY(50%);
+} */
+
+#main-slider .btn{
+    padding: 18px 40px;
+    background-color: var(--bs-warning);
+    color: var(--bs-light);
+    border: none;
+    display: inline-block;
+    transition: all 1s;
+}
+#main-slider .btn:hover{
+    background-color: var(--bs-light);
+    color: var(--bs-warning);
+}
+#main-slider .carousel-inner{
+    height: 750px;
+}
+#main-slider .carousel-item{
+    height: 750px;
+}
+#main-slider .carousel-item img{
+    height: 750px;
+    object-fit: cover;
+}
+#main-slider .carousel-caption{
+    right: 40%;
+    bottom: 50%;
+    transform: translateY(50%);
+} 
+#main-slider .carousel-caption h2{
+    font-family: var(--secondary-font);
+}
+#main-slider .carousel-caption h2 span{
+    position: relative;
+    display: inline-block;
+}
+#main-slider .carousel-caption h2 span::after{
+    position: absolute;
+    content: '';
+    width: 108px;
+    height: 100px;
+    background-image: url('../img/banner-1-shape-1.png');
+    background-repeat: no-repeat;
+    top: -10%;
+}
+
+
+/* services */
+.services{
+    position: relative;
+    width: 100%;
+    background-color: var(--bs-warning);
+    padding-top: 90px;
+    margin-bottom: 120px;
+}
+.services::before{
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    content: '';
+    background-image: url('../img/ripped-paper-primary-up.png');
+    background-size: cover;
+    transform: rotate(180deg);
+    bottom: 100%;
+    z-index: 10;
+}
+.services-box{
+    position: relative;
+    margin-bottom: -90px;
+}
+.services-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service-box-content{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    background-color: var(--bs-light);
+    border-radius: 5px;
+    box-shadow: 0px 0px 32px -2px rgba(0, 0, 0, 0.2);
+    bottom: -10%;
+    padding: 20px;
+}
+.service-box-content h3 a{
+    text-decoration: none;
+    color: var(--bs-green);
+    font-size: 22px;
+    font-weight: 600;
+}
+.about-content{
+    padding-left: 120px;
+    padding-top: 120px;
+    margin-top: 60px;
+    position: relative;
+}
+.tegline{
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    color: var(--bs-warning);
+    margin-bottom: 20px;
+}
+.text-green-light{
+    color: var(--bs-green-light);
+}
+.about{
+    width: 100%;
+    background-image: url('../img/about-bg-icon-1-1.png');
+    background-repeat: no-repeat;
+    background-position: right 115%;
+}
+.about-img{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+.review img{
+    max-width: 100%;
+    display: block;
+}
+.review{
+    position: absolute;
+    left: -20%;
+    top: 20%;
+    width: 219px;
+    height: 219px;
+    background-image: url('../img/about-circle.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.review h4{
+    font-family: var(--secondary-font);
+    color: var(--bs-light);
+    font-size: 40px;
+    line-height: 1;
+}
+/* services-list */
+.services-list{
+    position: relative;
+    width: 100%;
+    background-color: var(--bs-light);
+
+}
+.services-list::before{
+    position: absolute;
+    background-image: url('../img/ripped-paper-gray-up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+}
+.services-list::after{
+    position: absolute;
+    background-image: url('../img/ripped-paper-gray-up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73, 167, 96,0.9);
+    z-index: -1;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.jarallax h2{
+    font-family: var(--secondary-font);
+}
+.jarallax h2{
+    font-family: var(--secondary-font);
+}
+.quality{
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+.quality-img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+}
+.testmonials{
+    width: 100%;
+    position: relative;
+    background-color: #1f4e3d;
+}
+.testmonials::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background-image: url('../img/ripped-paper-header-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    opacity: 0.04;
+}
+.testmonials::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 16px;
+    background-image: url('../img/ripped-paper-header-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 100%;
+}
+.testmonials .carousel-caption{
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.testmonials .carousel-indicators [data-bs-target]{
+    width: 90px;
+    height: 90px;
+    background-color: var(--bs-green-light);
+    border-radius: 50%;
+    text-indent: 0;
+    overflow: hidden;
+    border: 3px solid var(--bs-light);
+    margin: 10px;
+}
+.testmonials .carousel-indicators{
+    margin-bottom: 0;
+}
+.testmonials .carousel-item{
+    margin-bottom: 50px;
+    height: 400px;
+}
+.blog{
+    background-color: var(--bs-light);
+    width: 100%;
+    margin: 50px auto;
+    padding: 120px;
+}
+.blog-home__slogan-image::before{
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-color: var(--thm-primary);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 20px
+}
+.circle{
+    width: 470px;
+    height: 470px;
+    background-color: var(--bs-light);
+    border-radius: 50%;
+}
+.circle2{
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--bs-light);
+    overflow: hidden;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+.bubble{
+    width: 180px;
+    height: 180px;
+    background-color: var(--bs-green-light);
+    border-radius: 50%;
+    top: -40px;
+    left: -30px;
+    position: absolute;
+    animation: bubble 10s linear 2s infinite;
+    transform-origin: center center;
+    perspective: 100px;
+}
+@keyframes bubble {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    30%{
+        transform: translate(50px,30px) rotate(15deg);
+        transform-origin: center center;
+    }
+    50%{
+        transform: translate(50px,100px) rotate(45deg);
+        transform-origin: right bottom;
+    }
+    80%{
+        transform: translate(50px,30px) rotate(15deg);
+        transform-origin: left top;
+    }
+    100%{
+        transform: translate(0px,0px) rotate(0deg);
+        transform-origin: center center;
+    }
+}
+.bubble2{
+    width: 55px;
+    height: 55px;
+    background-color: var(--bs-warning);
+    border-radius: 50%;
+    bottom: 10px;
+    left: -40px;
+    position: absolute;
+    animation: bubble 10s linear 2s infinite;
+    transform-origin: center center;
+    perspective: 100px;
+}
+@keyframes bubble2 {
+    0%,100%{
+        transform: translate(0p,0px) rotate(0deg);
+    }
+    20%,60%{
+        transform: translate(20px,40px) rotate(180deg);
+    }
+    30%,80%{
+        transform: translate(40px,60px) rotate(0deg);
+    }
+}
+.contact-form .form-control{
+    height: 71px;
+    background-color: var(--bs-light);
+    border: none;
+    padding: 1px 30px;
+    font-size: 16px;
+}
+.footer-bar{
+    background-color: var(--bs-green);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    position: relative;
+}
+.footer-bar::after{
+    background-image: url('../img/ripped-paper-base-2.png');
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 16px;
+    bottom: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;      
+}
+.footer-logo img{
+    max-width: 153px;
+}
+@media (max-width:575px){
+    
+}
+@media (max-width:576px){
+    
+}
+@media (max-width:768px){
+    .about-content{
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+}
+@media (max-width:992px){
+    .about-to-agrikon{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about-img {
+        position: absolute;
+        bottom: -50px;
+        left: -50px;
+    }
+}
+@media (max-width:1200px){
+    .services .services-box{
+        margin-bottom: 48px;
+    }
+    .about-content{
+        padding-left: 120px;
+        padding-top: 120px;
+        margin-top: 60px;
+    }
+}
+@media (max-width:1400px){
+    
+}
